@@ -12,10 +12,8 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
 bcrypt = Bcrypt(app)
-login_manager = LoginManager(app)
+login_manager = LoginManager()
+
 
 import Fencers_unit.forms
 import Fencers_unit.routes
-
-
-
