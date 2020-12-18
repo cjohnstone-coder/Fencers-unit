@@ -1,0 +1,8 @@
+{% extends "layout.html" %}
+{% block content %}
+<h1>Competitions</h1>
+<p>Fencers unit is a service that allows competition creators to set up a competition easily and customise the format of it.</p>
+{% if current_user.Admin %}
+	<a href="{{url_for("Competition_creator")}}" class="btn btn-outline-info">Create Competition</a>
+{% endif %}
+{% endblock content%}
